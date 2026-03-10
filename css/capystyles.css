@@ -438,6 +438,11 @@ tr > th:last-child {
   color: #fbfbf4;
 }
 
+.footer-links a {
+  text-decoration: none;
+  color: #fbfbf4;
+}
+
 .footer-social {
   display: flex;
   gap: 16px;
@@ -636,7 +641,7 @@ tr > th:last-child {
   max-width: 1300px;
   padding: 35px 0px;
   gap: 10px;
-  background-image: url("../assets/capycrew.jpg");
+  background-image: url("../assets/capycrew.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: right top;
