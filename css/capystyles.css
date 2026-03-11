@@ -69,6 +69,14 @@ h4 {
   float: left;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
+.menu-links img {
+  height: 24px;
+}
+
 .pagebanner {
   position: relative;
   width: 100%;
@@ -394,7 +402,9 @@ tr > th:last-child {
   display: flex;
   gap: 25px;
   justify-content: right;
+  align-items: center;
 }
+
 .menu-links .links {
   display: flex;
   gap: 35px;
@@ -828,6 +838,64 @@ tr > th:last-child {
 
 .team-card-text .label-text {
   font-size: 20px;
+}
+
+.flip-card {
+  display: flex;
+  width: 375px;
+  height: 422px;
+  border-radius: 20px;
+  background-color: #8c6b4f;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #8c6b4f;
+}
+
+.flip-card-back {
+  background-color: #265269;
+  transform: rotateY(180deg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.flip-card .text-area {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 24px;
+  color: #fbfbf4;
+}
+
+.flip-card-back p {
+  color: #fbfbf4;
 }
 
 /* MEET OUR CAPYBARAS */
