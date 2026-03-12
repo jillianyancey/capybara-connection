@@ -333,6 +333,7 @@ tr > th:last-child {
 
 .content-area {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
   max-width: 1225px;
@@ -909,6 +910,7 @@ tr > th:last-child {
 
 .lightbox-content {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1125px;
   justify-content: space-between;
