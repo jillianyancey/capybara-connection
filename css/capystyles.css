@@ -974,12 +974,11 @@ tr > th:last-child {
 
 /* The Close Button */
 .close {
-  color: #fff42c;
+  color: #c74a3a;
   position: absolute;
   top: 10px;
   right: 25px;
-  font-size: 35px;
-  font-weight: bold;
+  font-size: 30px;
 }
 
 .close:hover,
@@ -1006,9 +1005,9 @@ tr > th:last-child {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: #fff42c;
+  color: #c74a3a;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -1029,8 +1028,9 @@ tr > th:last-child {
 
 /* Number text (1/3 etc) */
 .numbertext {
-  color: #fff42c;
-  font-size: 12px;
+  color: #fbfbf4;
+  font-size: 14px;
+  font-weight: bold;
   padding: 8px 12px;
   position: absolute;
   top: 0;
@@ -1044,7 +1044,7 @@ tr > th:last-child {
   text-align: center;
   background-color: black;
   padding: 2px 16px;
-  color: #fff42c;
+  color: #fbfbf4;
 }
 
 .demo {
