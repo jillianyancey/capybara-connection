@@ -919,7 +919,7 @@ tr > th:last-child {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 330px;
+  width: 300px;
   align-items: center;
 }
 
@@ -940,7 +940,7 @@ tr > th:last-child {
   background-color: #c74a3a;
   width: 100%;
   max-width: 1125px;
-  margin: 35px auto;
+  margin: 50px auto;
 }
 
 .meetinperson {
@@ -964,16 +964,11 @@ tr > th:last-child {
 
 .meetinperson .textandbutton {
   display: flex;
+  flex-direction: column;
   justify-self: right;
   max-width: 750px;
   border-radius: 80px 20px 80px 20px;
   padding: 55px;
-  gap: 10px;
+  gap: 24px;
   background-color: #fbfbf4;
-}
-
-.meetinperson .textandbutton {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
 }
