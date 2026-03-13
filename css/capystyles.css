@@ -16,6 +16,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0%;
+  color: #2b2b2b;
 }
 
 p {
@@ -210,7 +211,7 @@ td {
 
 td {
   background-color: #fbfbf4;
-  color: #265269;
+  color: #2b2b2b;
 }
 
 tr > td:first-child {
@@ -788,9 +789,10 @@ tr > th:last-child {
   max-width: 580px;
   background-color: #f2edd0;
   border-radius: 20px;
-  padding: 40px 55px 40px 40px;
+  padding: 40px;
   gap: 10px;
   overflow-y: scroll;
+  cursor: ns-resize;
 }
 
 .dir-scroll h3 {
