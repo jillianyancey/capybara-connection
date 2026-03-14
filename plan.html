@@ -98,14 +98,24 @@
         </div>
 
         <div class="table-container">
-          <table class="ticket-table">
+          <table class="ticket-table" id="ticketTable">
             <tr>
-              <th class="table-header">EXPERIENCE</th>
-              <th class="table-header">PRICE</th>
-              <th class="table-header">ADMITS</th>
-              <th class="table-header">DESCRIPTION</th>
-              <th class="table-header">USE</th>
-              <th></th>
+              <th class="table-header" onclick="sortTable(0, 'asc')">
+                EXPERIENCE <span class="arrow"></span>
+              </th>
+              <th class="table-header" onclick="sortTable(1, 'asc')">
+                PRICE <span class="arrow"></span>
+              </th>
+              <th class="table-header" onclick="sortTable(2, 'asc')">
+                ADMITS <span class="arrow"></span>
+              </th>
+              <th class="table-header" style="cursor: default">
+                DESCRIPTION <span class="arrow"></span>
+              </th>
+              <th class="table-header" onclick="sortTable(4, 'asc')">
+                USE <span class="arrow"></span>
+              </th>
+              <th><span class="arrow"></span></th>
             </tr>
             <tr>
               <td><span class="table-row-header">Capybara Encounter</span></td>
@@ -314,5 +324,82 @@
         </div>
       </div>
     </div>
+
+    <script>
+      function sortTable(n, z) {
+        var table,
+          rows,
+          switching,
+          i,
+          x,
+          y,
+          shouldSwitch,
+          dir,
+          switchcount = 0;
+        table = document.getElementById("ticketTable");
+        switching = true;
+
+        // Set initial direction
+        dir = z === "asc" ? "asc" : "desc";
+
+        // Header styling + arrow reset
+        var headers = table.getElementsByTagName("th");
+        for (var i = 0; i < headers.length; i++) {
+          headers[i].classList.remove("sorted");
+          headers[i].querySelector(".arrow").innerHTML = "";
+        }
+
+        // Mark active header
+        headers[n].classList.add("sorted");
+
+        while (switching) {
+          switching = false;
+          rows = table.rows;
+
+          for (i = 1; i < rows.length - 1; i++) {
+            shouldSwitch = false;
+
+            x = rows[i].getElementsByTagName("td")[n];
+            y = rows[i + 1].getElementsByTagName("td")[n];
+
+            let xVal = x.innerHTML.trim();
+            let yVal = y.innerHTML.trim();
+
+            // Numeric detection
+            let xNum = parseFloat(xVal.replace(/,/g, ""));
+            let yNum = parseFloat(yVal.replace(/,/g, ""));
+            let bothNumbers = !isNaN(xNum) && !isNaN(yNum);
+
+            if (bothNumbers) {
+              if (dir === "asc" && xNum > yNum) shouldSwitch = true;
+              if (dir === "desc" && xNum < yNum) shouldSwitch = true;
+            } else {
+              let xText = xVal.toLowerCase();
+              let yText = yVal.toLowerCase();
+
+              if (dir === "asc" && xText > yText) shouldSwitch = true;
+              if (dir === "desc" && xText < yText) shouldSwitch = true;
+            }
+
+            if (shouldSwitch) {
+              rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+              switching = true;
+              switchcount++;
+              break;
+            }
+          }
+
+          // If no switches in asc mode, flip to desc
+          if (switchcount == 0 && dir === "asc") {
+            dir = "desc";
+            switching = true;
+          }
+        }
+
+        // Apply arrow icon to active header
+        const arrow = headers[n].querySelector(".arrow");
+        arrow.innerHTML = dir === "asc" ? "▲" : "▼";
+      }
+    </script>
   </body>
 </html>
