@@ -53,7 +53,6 @@
 
     <div class="section">
       <div class="container">
-        
         <div class="section-heading">
           <div class="heading-text">
             <h2>Visitor Information</h2>
@@ -63,6 +62,118 @@
         <div class="subheading-text">
           <h3>Tickets & Visits</h3>
         </div>
+
+        <div class="faq-container">
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>What types of tickets are available?</h4>
+            </div>
+            <div class="faq-a">
+              <p>
+                We offer tickets for Private Capybara Encounters and individual,
+                family/group, and Sensory Tuesday tickets for Capybara Commons.
+                We also offer season passes for frequent visitors. You can see
+                full details and pricing on our Plan Your Visit page.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>Do I need a reservation?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>Can I bring my own food or drinks?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>Are any of the experiences sensory-friendly?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>What is the age range for visitors?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+        </div>
+
+        <hr class="styled-hr-story" style="margin: 45px auto" />
+
+        <div class="subheading-text">
+          <h3>Tickets & Visits</h3>
+        </div>
+
+        <div class="faq-container">
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>What types of tickets are available?</h4>
+            </div>
+            <div class="faq-a">
+              <p>
+                We offer tickets for Private Capybara Encounters and individual,
+                family/group, and Sensory Tuesday tickets for Capybara Commons.
+                We also offer season passes for frequent visitors. You can see
+                full details and pricing on our Plan Your Visit page.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>Do I need a reservation?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>Can I bring my own food or drinks?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>Are any of the experiences sensory-friendly?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+
+          <div class="faq-content">
+            <div class="faq-q">
+              <h4>What is the age range for visitors?</h4>
+            </div>
+            <div class="faq-a">
+              <p>XYZ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="footer-area">
       <div class="container">
@@ -117,5 +228,24 @@
         </div>
       </div>
     </div>
+
+    <script>
+      var a = document.getElementsByClassName("faq-q");
+      var i;
+
+      for (i = 0; i < a.length; i++) {
+        a[i].addEventListener("click", function () {
+          this.classList.toggle("faq-active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            panel.style.margin = 0 + "px";
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.margin = 0 + "px";
+          }
+        });
+      }
+    </script>
   </body>
 </html>
