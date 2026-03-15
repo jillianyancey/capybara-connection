@@ -277,6 +277,7 @@ tr > th:last-child {
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
+  letter-spacing: 10%;
 }
 
 .small-secondary {
@@ -292,6 +293,7 @@ tr > th:last-child {
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
+  letter-spacing: 10%;
 }
 
 .button-primary {
@@ -307,6 +309,7 @@ tr > th:last-child {
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
+  letter-spacing: 10%;
 }
 
 .button-secondary {
@@ -322,6 +325,7 @@ tr > th:last-child {
   font-style: normal;
   font-size: 16px;
   cursor: pointer;
+  letter-spacing: 10%;
 }
 
 .button-container {
@@ -1086,7 +1090,6 @@ img.hover-shadow {
   display: flex;
   width: 100%;
   padding: 70px;
-  background-color: #e0f2a0;
   justify-content: center;
 }
 
@@ -1166,4 +1169,33 @@ img.hover-shadow {
 
 .faq-active:after {
   transform: rotate(90deg);
+}
+
+.contact-section {
+  background-image: url("../assets/LargeCapyBG.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  padding: 70px;
+}
+
+.contact-section .container {
+  max-width: 1300px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  max-width: 750px;
+  width: 58%;
+  border-radius: 80px 20px 80px 20px;
+  padding: 55px;
+  gap: 24px;
+}
+
+.form-content .textarea {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
