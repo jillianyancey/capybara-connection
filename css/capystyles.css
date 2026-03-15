@@ -1174,7 +1174,7 @@ img.hover-shadow {
 .contact-section {
   background-image: url("../assets/LargeCapyBG.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   padding: 70px;
 }
