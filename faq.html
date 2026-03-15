@@ -222,22 +222,38 @@
 
           <div>
             <form>
-              <label for="fname">First Name</label>
-              <label for="lname">Last Name</label>
-              <br />
-              <input type="text" id="fname" value="John" />
-              <input type="text" id="lname" value="Carter" />
-              <br />
-              <label for="phone">Phone</label>
-              <label for="email">Email</label>
-              <br />
-              <input type="text" id="phone" value="(123)123-1234" />
-              <input type="text" id="email" value="jcarter@email.com" />
-              <br />
-              <label for="message">Leave Us a Message</label>
-              <textarea style="width: 100%" name="message">
+              <div class="form-row">
+                <div class="form-col">
+                  <label for="fname">First Name</label>
+                  <br />
+                  <input type="text" id="fname" value="John" />
+                </div>
+                <div class="form-col">
+                  <label for="lname">Last Name</label>
+                  <br />
+                  <input type="text" id="lname" value="Carter" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-col">
+                  <label for="phone">Phone</label>
+                  <br />
+                  <input type="text" id="phone" value="(123)123-1234" />
+                </div>
+                <div class="form-col">
+                  <label for="email">Email</label>
+                  <br />
+                  <input type="text" id="email" value="jcarter@email.com" />
+                </div>
+              </div>
+              <div>
+                <label for="message">Leave Us a Message</label>
+                <br />
+                <textarea style="width: 100%" name="message">
 Please type your message here</textarea
-              >
+                >
+              </div>
               <input
                 type="submit"
                 value="SEND MESSAGE"
