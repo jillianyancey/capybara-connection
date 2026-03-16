@@ -1261,10 +1261,10 @@ label {
 
 .carousel {
   position: relative;
-  width: 900px;
-  height: 400px;
+  width: 1000px;
+  height: 600px;
   overflow: hidden;
-  margin: 40px auto;
+  margin: 0px auto;
 }
 
 .carousel-slide {
@@ -1290,13 +1290,15 @@ label {
 
 .slide-text {
   position: absolute;
-  top: 20%;
-  left: 20px;
-  width: 40%;
-  background-color: #e0f2a0;
-  padding: 20px;
+  top: 50px;
+  left: 50px;
+  width: 540px;
+  background-color: #f2edd0;
+  padding: 55px;
   transform: translateX(-150%);
   animation: slideInLeft 0.8s forwards;
+  border-radius: 20px 70px 20px 70px;
+  border: 1px solid #265269;
 }
 
 @keyframes slideInLeft {
