@@ -198,5 +198,63 @@
         </div>
       </div>
     </div>
+
+    <script>
+      let index = 0;
+      const slides = document.querySelectorAll(".carousel-slide");
+      const dots = document.querySelectorAll(".dot");
+
+      function updateDots(i) {
+        dots.forEach((dot, idx) => {
+          dot.classList.toggle("active-dot", idx === 1);
+        });
+      }
+
+      function showSlide(i) {
+        slides.forEach((slides, idx) => {
+          slide.classList.removew("actv");
+
+          const text = slide.querySelector(".slide-text");
+          const img = slide.querySelector(".slide-image");
+
+          text.style.animation = "none";
+          img.style.animation = "none";
+          void text.offsetWidth;
+          void img.offsetWidth;
+
+          if (idx === 1) {
+            slide.classList.add("actv");
+            text.style.animation = "slideInLeft 0.8s forwards";
+            img.style.animation = "slideInRight 0.8s forwards";
+          }
+        });
+
+        updateDots(i);
+      }
+
+      function nextSlide() {
+        index = (index + 1) % slides.length;
+        showSlide(index);
+      }
+
+      function prevSlide() {
+        index = (index - 1 + slides.length) % slides.length;
+        showSlide(index);
+      }
+
+      dots.forEach((doy, idx) => {
+        dot.addEventListener("click", () => {
+          index = idx;
+          showSlide(index);
+        });
+      });
+
+      setInterval(nextSlide, 4000);
+
+      document.querySelector(".next").addEventListener("click", nextSlide);
+      document.querySelector(".prev").addEventListener("click", prevSlide);
+
+      showSlide(index);
+    </script>
   </body>
 </html>
