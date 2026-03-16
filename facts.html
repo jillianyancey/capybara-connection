@@ -65,11 +65,11 @@
             <img src="assets/CapySlide1.png" class="slide-image" />
             <div class="slide-text">
               <h3>They Love Hot Springs</h3>
-              <ul>
-                <li>Relax</li>
-                <li>Relax</li>
-                <li>Relax</li>
-              </ul>
+              <div class="fact-text">
+                <div><img src="" />Relax together during colder months</div>
+                <div><img src="" />Relax together during colder months</div>
+                <div><img src="" />Relax together during colder months</div>
+              </div>
             </div>
           </div>
 
@@ -77,16 +77,29 @@
             <img src="assets/CapySlide1.png" class="slide-image" />
             <div class="slide-text">
               <h3>They Love Hot Springs</h3>
-              <ul>
-                <li>Relax2</li>
-                <li>Relax2</li>
-                <li>Relax2</li>
-              </ul>
+              <div class="fact-text">
+                <div><img src="" />Relax together during colder months</div>
+                <div><img src="" />Relax together during colder months</div>
+                <div><img src="" />Relax together during colder months</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-slide">
+            <img src="assets/CapySlide1.png" class="slide-image" />
+            <div class="slide-text">
+              <h3>They Love Hot Springs</h3>
+              <div class="fact-text">
+                <div><img src="" />Relax together during colder months</div>
+                <div><img src="" />Relax together during colder months</div>
+                <div><img src="" />Relax together during colder months</div>
+              </div>
             </div>
           </div>
 
           <div class="dots">
             <span class="dot active-dot"></span>
+            <span class="dot"></span>
             <span class="dot"></span>
           </div>
         </div>
@@ -238,13 +251,13 @@
 
       function updateDots(i) {
         dots.forEach((dot, idx) => {
-          dot.classList.toggle("active-dot", idx === 1);
+          dot.classList.toggle("active-dot", idx === i);
         });
       }
 
       function showSlide(i) {
-        slides.forEach((slides, idx) => {
-          slide.classList.removew("actv");
+        slides.forEach((slide, idx) => {
+          slide.classList.remove("actv");
 
           const text = slide.querySelector(".slide-text");
           const img = slide.querySelector(".slide-image");
@@ -254,7 +267,7 @@
           void text.offsetWidth;
           void img.offsetWidth;
 
-          if (idx === 1) {
+          if (idx === i) {
             slide.classList.add("actv");
             text.style.animation = "slideInLeft 0.8s forwards";
             img.style.animation = "slideInRight 0.8s forwards";
@@ -274,14 +287,14 @@
         showSlide(index);
       }
 
-      dots.forEach((doy, idx) => {
+      dots.forEach((dot, idx) => {
         dot.addEventListener("click", () => {
           index = idx;
           showSlide(index);
         });
       });
 
-      setInterval(nextSlide, 4000);
+      setInterval(nextSlide, 40000);
 
       document.querySelector(".next").addEventListener("click", nextSlide);
       document.querySelector(".prev").addEventListener("click", prevSlide);
