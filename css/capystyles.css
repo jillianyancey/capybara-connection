@@ -1318,7 +1318,7 @@ label {
   gap: 15px;
   padding-left: 20px;
   color: #265269;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   letter-spacing: 0%;
   font-family: "Lato";
@@ -1395,3 +1395,43 @@ label {
   background: white;
 }
 /*END CAROUSEL */
+
+/*RESPONSIVE STYLES */
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  .overlay-text {
+    font-size: 2.9rem;
+    line-height: 1.1;
+  }
+
+  .links a {
+    color: #265269;
+    font-style: normal;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+  }
+
+  .links a.active {
+    color: #8c6b4f;
+    border-bottom: 1px solid #8c6b4f;
+  }
+}
