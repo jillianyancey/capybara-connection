@@ -1435,3 +1435,36 @@ label {
     border-bottom: 1px solid #8c6b4f;
   }
 }
+
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3.8rem;
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+
+  .overlay-text {
+    font-size: 4.4rem;
+    line-height: 1.1;
+  }
+
+  .links a {
+    color: #265269;
+    font-style: normal;
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2;
+  }
+
+  .links a.active {
+    color: #8c6b4f;
+    border-bottom: 1px solid #8c6b4f;
+  }
+}
