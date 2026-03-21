@@ -13,48 +13,48 @@ body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1rem;
+  line-height: 1.6;
   letter-spacing: 0%;
   color: #2b2b2b;
 }
 
 p {
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 
 h1 {
   font-family: "Bonnie", sans-serif;
-  font-size: 86px;
+  font-size: 5.5rem;
   font-weight: 900;
-  line-height: 95px;
+  line-height: 1.1;
   letter-spacing: 5%;
   color: #265269;
 }
 
 h2 {
   font-family: "Bonnie", sans-serif;
-  font-size: 54px;
+  font-size: 3.4rem;
   font-weight: 800;
-  line-height: 60px;
-  letter-spacing: 0px;
+  line-height: 1.1;
+  letter-spacing: 0%;
   color: #265269;
 }
 
 h3 {
   font-family: "Bonnie", sans-serif;
-  font-size: 33px;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 38px;
-  letter-spacing: 0px;
+  line-height: 1.2;
+  letter-spacing: 0%;
   color: #fbfbf4;
 }
 
 h4 {
   font-family: "Lato", sans-serif;
-  font-size: 22px;
+  font-size: 1.4rem;
   font-weight: 600;
-  line-height: 28px;
+  line-height: 1.3;
   letter-spacing: 0px;
   color: #265269;
 }
@@ -76,7 +76,7 @@ h4 {
 }
 
 .menu-links img {
-  height: 24px;
+  height: 1.5rem;
 }
 
 .pagebanner {
@@ -109,8 +109,8 @@ h4 {
 }
 
 .introtext {
-  font-size: 22px;
-  line-height: 33px;
+  font-size: 1.4rem;
+  line-height: 1.5;
   text-align: center;
   width: 1000px;
   letter-spacing: 0%;
@@ -159,9 +159,9 @@ h4 {
 
 .label-text {
   font-family: "Bonnie", sans-serif;
-  font-size: 22px;
+  font-size: 1.3rem;
   font-weight: 600;
-  line-height: 26px;
+  line-height: 1.2;
   letter-spacing: 7%;
   color: #fbfbf4;
   margin: 0 auto;
@@ -185,16 +185,16 @@ h4 {
 
 .table-header {
   font-family: "Bonnie", sans-serif;
-  font-size: 23px;
+  font-size: 1.4rem;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.1;
   letter-spacing: 7%;
 }
 .table-row-header {
   font-family: "Bonnie", sans-serif;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 1.4;
   letter-spacing: 0%;
   font-weight: bold;
   color: #265269;
@@ -252,9 +252,6 @@ tr > th:last-child {
 }
 
 .bold-body-text {
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0%;
   font-weight: 700;
 }
 
@@ -270,64 +267,68 @@ tr > th:last-child {
   border: 1.5px;
   border-style: solid;
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   background-color: #c74a3a;
   border-color: #c74a3a;
   color: #fbfbf4;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   letter-spacing: 10%;
+  line-height: 1.1;
 }
 
 .small-secondary {
   border: 1.5px;
   border-style: solid;
   border-radius: 40px;
-  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   background-color: #f2edd0;
   border-color: #c74a3a;
   color: #c74a3a;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   letter-spacing: 10%;
+  line-height: 1.1;
 }
 
 .button-primary {
   border: 1.5px;
   border-style: solid;
   border-radius: 40px;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   background-color: #c74a3a;
   border-color: #c74a3a;
   color: #fbfbf4;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   letter-spacing: 10%;
+  line-height: 1.1;
 }
 
 .button-secondary {
   border: 1.5px;
   border-style: solid;
   border-radius: 40px;
-  padding: 16px 32px;
+  padding: 1rem 2rem;
   background-color: #fbfbf4;
   border-color: #c74a3a;
   color: #c74a3a;
   font-family: "Lato", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   letter-spacing: 10%;
+  line-height: 1.1;
 }
 
 .button-container {
@@ -344,10 +345,10 @@ tr > th:last-child {
   font-style: normal;
   text-decoration: none;
   font-family: "Lato", sans-serif;
-  font-size: 17px;
+  font-size: 1.1rem;
   font-weight: 700;
   font-style: normal;
-  line-height: 20px;
+  line-height: 1.2;
 }
 
 .links a.active {
@@ -465,8 +466,8 @@ tr > th:last-child {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px;
-  line-height: 17px;
+  font-size: 0.9rem;
+  line-height: 1.1;
   color: #fbfbf4;
 }
 
@@ -481,8 +482,8 @@ tr > th:last-child {
 }
 
 .footer-social .icon {
-  width: 35px;
-  height: 35px;
+  width: 2.2rem;
+  height: 2.2rem;
   background-color: #fbfbf4;
   color: #c74a3a;
   align-content: center;
@@ -505,8 +506,8 @@ tr > th:last-child {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 0.9rem;
+  line-height: 1.4;
   color: #fbfbf4;
 }
 
@@ -518,8 +519,8 @@ tr > th:last-child {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 15px;
-  line-height: 22px;
+  font-size: 0.9rem;
+  line-height: 1.4;
   color: #fbfbf4;
 }
 
@@ -543,8 +544,8 @@ tr > th:last-child {
 .overlay-text {
   position: absolute;
   color: #fbfbf4;
-  font-size: 96px;
-  line-height: 105px;
+  font-size: 6rem;
+  line-height: 1.1;
   letter-spacing: 5%;
   text-align: center;
   font-family: "Bonnie", sans-serif;
@@ -584,8 +585,8 @@ tr > th:last-child {
 }
 
 .icon {
-  width: 110px;
-  height: 110px;
+  width: 6.9rem;
+  height: 6.9rem;
   border: 1.5px;
   border-style: solid;
   border-color: #c74a3a;
@@ -749,8 +750,8 @@ tr > th:last-child {
   gap: 30px;
   padding: 35px 50px 50px 50px;
   background-color: #f2edd0;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.3rem;
+  line-height: 1.8;
   letter-spacing: 0%;
   color: #265269;
 }
@@ -1029,7 +1030,7 @@ tr > th:last-child {
   margin-top: -50px;
   color: #c74a3a;
   font-weight: bold;
-  font-size: 30px;
+  font-size: 1.9rem;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
@@ -1051,7 +1052,7 @@ tr > th:last-child {
 /* Number text (1/3 etc) */
 .numbertext {
   color: #fbfbf4;
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: bold;
   padding: 8px 12px;
   position: absolute;
@@ -1151,7 +1152,7 @@ img.hover-shadow {
   content: "\f054";
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem;
   float: right;
   margin-right: 0px;
   color: #c74a3a;
@@ -1316,15 +1317,15 @@ label {
   gap: 15px;
   padding-left: 20px;
   color: #265269;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 1.25rem;
+  line-height: 1.4;
   letter-spacing: 0%;
   font-family: "Lato";
   font-weight: 500;
 }
 
 .fact-text img {
-  width: 22px;
+  width: 1.4rem;
   height: auto;
 }
 
@@ -1353,7 +1354,7 @@ label {
   background: rgba(0, 0, 0, 0.4);
   color: #c74a3a;
   border: none;
-  font-size: 32px;
+  font-size: 2rem;
   padding: 10px 16px;
   cursor: pointer;
   z-index: 10;
