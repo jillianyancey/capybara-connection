@@ -1510,4 +1510,8 @@ label {
   tbody tr:first-child td {
     padding-top: 10px !important;
   } /*End Responsive Table*/
+
+  .form-row {
+    flex-direction: column;
+  }
 }
