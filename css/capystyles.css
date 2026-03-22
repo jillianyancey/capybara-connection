@@ -360,7 +360,8 @@ tr > th:last-child {
 .content-area {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 1rem;
   width: 100%;
   max-width: 1225px;
   margin: 0 auto;
@@ -368,8 +369,9 @@ tr > th:last-child {
 
 .card {
   display: flex;
+  flex: 1 1 375px;
   flex-direction: column;
-  width: 375px;
+  max-width: 375px;
   border-radius: 20px;
   background-color: #8c6b4f;
   overflow: hidden;
@@ -918,7 +920,6 @@ tr > th:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 60px;
 }
 
 .lightbox-content {
@@ -926,16 +927,19 @@ tr > th:last-child {
   flex-wrap: wrap;
   width: 100%;
   max-width: 1075px;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0 auto;
+  gap: 1rem;
 }
 
 .lightbox-image {
   display: flex;
+  flex: 1 1 300px;
   flex-direction: column;
   gap: 20px;
   width: 300px;
   align-items: center;
+  margin-bottom: 3rem;
 }
 
 .lightbox-image .label-text,
