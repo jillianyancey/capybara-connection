@@ -99,119 +99,133 @@
 
         <div class="table-container">
           <table class="ticket-table" id="ticketTable">
-            <tr>
-              <th class="table-header" onclick="sortTable(0, 'asc')">
-                EXPERIENCE <span class="arrow"></span>
-              </th>
-              <th class="table-header" onclick="sortTable(1, 'asc')">
-                PRICE <span class="arrow"></span>
-              </th>
-              <th class="table-header" onclick="sortTable(2, 'asc')">
-                ADMITS <span class="arrow"></span>
-              </th>
-              <th class="table-header" style="cursor: default">
-                DESCRIPTION <span class="arrow"></span>
-              </th>
-              <th class="table-header" onclick="sortTable(4, 'asc')">
-                USE <span class="arrow"></span>
-              </th>
-              <th><span class="arrow"></span></th>
-            </tr>
-            <tr>
-              <td><span class="table-row-header">Capybara Encounter</span></td>
-              <td><span class="bold-body-text">$175 per session</span></td>
-              <td>Up to 5 people</td>
-              <td>
-                A private, guided capybara experience with exclusive interaction
-                time. Includes access to Capybara Commons.
-              </td>
-              <td>Single Use</td>
-              <td>
-                <button class="small-secondary table-button">
-                  BUY TICKETS
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-row-header"
-                  >Capybara Commons - Individual</span
-                >
-              </td>
-              <td><span class="bold-body-text">$18 per person</span></td>
-              <td>1 person</td>
-              <td>
-                General admission to our open farm area. Includes access to
-                capybaras and other friendly farm animals.
-              </td>
-              <td>Single Use</td>
-              <td>
-                <button class="small-secondary table-button">
-                  BUY TICKETS
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-row-header"
-                  >Capybara Commons - Family or Large Group</span
-                >
-              </td>
-              <td>
-                <span class="bold-body-text"
-                  >$60 for 4 + $12 for each additional</span
-                >
-              </td>
-              <td>4-10 people</td>
-              <td>
-                Discounted group admission for families or friend groups
-                visiting together during regular public hours.
-              </td>
-              <td>Single Use</td>
-              <td>
-                <button class="small-secondary table-button">
-                  BUY TICKETS
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-row-header"
-                  >Capybara Commons - Season Pass</span
-                >
-              </td>
-              <td><span class="bold-body-text">$100 per persn</span></td>
-              <td>1 person</td>
-              <td>
-                Unlimited access to the petting farm for the season. Great for
-                frequent visitors and capybara super fans.
-              </td>
-              <td>Multiple Use</td>
-              <td>
-                <button class="small-secondary table-button">
-                  BUY TICKETS
-                </button>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <span class="table-row-header"
-                  >Sensory Tuesday - Capybara Commons</span
-                >
-              </td>
-              <td><span class="bold-body-text">$15 per person</span></td>
-              <td>1 person</td>
-              <td>
-                A quieter, reduced-capacity experience designed for guests who
-                benefit from a calmer environment.
-              </td>
-              <td>Single Use</td>
-              <td>
-                <button class="small-secondary table-button">
-                  BUY TICKETS
-                </button>
-              </td>
-            </tr>
+            <thead>
+              <tr>
+                <th class="table-header" onclick="sortTable(0, 'asc')">
+                  EXPERIENCE <span class="arrow"></span>
+                </th>
+                <th class="table-header" onclick="sortTable(1, 'asc')">
+                  PRICE <span class="arrow"></span>
+                </th>
+                <th class="table-header" onclick="sortTable(2, 'asc')">
+                  ADMITS <span class="arrow"></span>
+                </th>
+                <th class="table-header" style="cursor: default">
+                  DESCRIPTION <span class="arrow"></span>
+                </th>
+                <th class="table-header" onclick="sortTable(4, 'asc')">
+                  USE <span class="arrow"></span>
+                </th>
+                <th><span class="arrow"></span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-cell" cell-label="Experience">
+                  <span class="table-row-header">Capybara Encounter</span>
+                </td>
+                <td class="text-cell" cell-label="Price">
+                  <span class="bold-body-text">$175 per session</span>
+                </td>
+                <td class="text-cell" cell-label="Admits">Up to 5 people</td>
+                <td class="text-cell" cell-label="Description">
+                  A private, guided capybara experience with exclusive
+                  interaction time. Includes access to Capybara Commons.
+                </td>
+                <td class="text-cell" cell-label="Use">Single Use</td>
+                <td class="text-cell" cell-label="">
+                  <button class="small-secondary table-button">
+                    BUY TICKETS
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-cell" cell-label="Experience">
+                  <span class="table-row-header"
+                    >Capybara Commons - Individual</span
+                  >
+                </td>
+                <td class="text-cell" cell-label="Price">
+                  <span class="bold-body-text">$18 per person</span>
+                </td>
+                <td class="text-cell" cell-label="Admits">1 person</td>
+                <td class="text-cell" cell-label="Description">
+                  General admission to our open farm area. Includes access to
+                  capybaras and other friendly farm animals.
+                </td>
+                <td class="text-cell" cell-label="Use">Single Use</td>
+                <td class="text-cell" cell-label="">
+                  <button class="small-secondary table-button">
+                    BUY TICKETS
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-cell" cell-label="Experience">
+                  <span class="table-row-header"
+                    >Capybara Commons - Family or Large Group</span
+                  >
+                </td>
+                <td class="text-cell" cell-label="Price">
+                  <span class="bold-body-text"
+                    >$60 for 4 + $12 for each additional</span
+                  >
+                </td>
+                <td class="text-cell" cell-label="Admits">4-10 people</td>
+                <td class="text-cell" cell-label="Description">
+                  Discounted group admission for families or friend groups
+                  visiting together during regular public hours.
+                </td>
+                <td class="text-cell" cell-label="Use">Single Use</td>
+                <td class="text-cell" cell-label="">
+                  <button class="small-secondary table-button">
+                    BUY TICKETS
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-cell" cell-label="Experience">
+                  <span class="table-row-header"
+                    >Capybara Commons - Season Pass</span
+                  >
+                </td>
+                <td class="text-cell" cell-label="Price">
+                  <span class="bold-body-text">$100 per persn</span>
+                </td>
+                <td class="text-cell" cell-label="Admits">1 person</td>
+                <td class="text-cell" cell-label="Description">
+                  Unlimited access to the petting farm for the season. Great for
+                  frequent visitors and capybara super fans.
+                </td>
+                <td class="text-cell" cell-label="Use">Multiple Use</td>
+                <td class="text-cell" cell-label="">
+                  <button class="small-secondary table-button">
+                    BUY TICKETS
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="text-cell" cell-label="Experience">
+                  <span class="table-row-header"
+                    >Sensory Tuesday - Capybara Commons</span
+                  >
+                </td>
+                <td class="text-cell" cell-label="Price">
+                  <span class="bold-body-text">$15 per person</span>
+                </td>
+                <td class="text-cell" cell-label="Admits">1 person</td>
+                <td class="text-cell" cell-label="Description">
+                  A quieter, reduced-capacity experience designed for guests who
+                  benefit from a calmer environment.
+                </td>
+                <td class="text-cell" cell-label="Use">Single Use</td>
+                <td class="text-cell" cell-label="">
+                  <button class="small-secondary table-button">
+                    BUY TICKETS
+                  </button>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

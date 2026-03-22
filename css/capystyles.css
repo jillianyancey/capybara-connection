@@ -1155,7 +1155,7 @@ img.hover-shadow {
   align-items: center;
   position: absolute;
   top: 0;
-  right: 0;
+  left: calc(100% + 10px);
   transition: transform 0.3s ease-out;
 }
 
@@ -1234,17 +1234,19 @@ label {
 .video-area {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: center;
+  gap: 1.875rem;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .vid {
-  flex: 1;
+  flex: 1 1 380px;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  max-width: 380px;
   justify-content: center;
 }
 
@@ -1258,8 +1260,9 @@ label {
 
 .carousel {
   position: relative;
-  width: 1000px;
-  height: 600px;
+  width: 100%;
+  max-width: 1000px;
+  aspect-ratio: 10 / 6;
   overflow: hidden;
   margin: 0px auto;
 }
@@ -1291,7 +1294,7 @@ label {
   left: 50px;
   width: 540px;
   background-color: #f2edd0;
-  padding: 40px 55px 55px 55px;
+  padding: 2.5rem 3.44rem 3.44rem 3.44rem;
   transform: translateX(-150%);
   animation: slideInLeft 0.8s forwards;
   border-radius: 20px 70px 20px 70px;
@@ -1460,4 +1463,51 @@ label {
     color: #8c6b4f;
     border-bottom: 1px solid #8c6b4f;
   }
+}
+
+@media screen and (max-width: 900px) {
+  /*Responsive Table*/
+
+  .ticket-table thead {
+    display: none;
+  }
+  th,
+  td {
+    padding: 1em;
+    border: 0;
+  }
+  tr > td:last-child {
+    border-bottom: 10px solid #e0f2a0;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0;
+  }
+  tr > td:first-child {
+    padding-left: 9em;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+  .text-cell {
+    display: block;
+    padding-left: 9em;
+    max-width: 100%;
+    position: relative;
+  }
+  .text-cell::before {
+    content: attr(cell-label);
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #265269;
+  }
+  .price {
+    text-align: left;
+  }
+  .sortselect {
+    display: block;
+  }
+  tbody tr:first-child td {
+    padding-top: 10px !important;
+  } /*End Responsive Table*/
 }
