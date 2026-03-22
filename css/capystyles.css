@@ -55,7 +55,7 @@ h4 {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.3;
-  letter-spacing: 0px;
+  letter-spacing: 0%;
   color: #265269;
 }
 
@@ -103,16 +103,17 @@ h4 {
   flex-direction: column;
   width: 100%;
   align-items: center;
-  padding-top: 45px;
-  padding-bottom: 30px;
-  gap: 25px;
+  padding-top: 2.81rem;
+  padding-bottom: 1.88rem;
+  gap: 1.56rem;
 }
 
 .introtext {
   font-size: 1.4rem;
   line-height: 1.5;
   text-align: center;
-  width: 1000px;
+  width: 100%;
+  max-width: 1000px;
   letter-spacing: 0%;
   color: #265269;
   font-family: "Bonnie";
@@ -123,7 +124,7 @@ h4 {
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 6.25rem;
 }
 
 .greenbg {
@@ -140,8 +141,8 @@ h4 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 50px;
-  padding-bottom: 45px;
+  padding-top: 3.12rem;
+  padding-bottom: 2.18rem;
   justify-content: center;
   align-items: center;
 }
@@ -150,7 +151,7 @@ h4 {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding-bottom: 2.18rem;
 }
 
 .heading-text {
@@ -202,7 +203,7 @@ h4 {
 
 th,
 td {
-  padding: 24px 50px 24px 0px;
+  padding: 1.5rem 3.125rem 1.5rem 0rem;
   color: #fbfbf4;
   background-color: #265269;
   border-top: 5px solid #e0f2a0;
@@ -225,14 +226,14 @@ th {
 th .arrow {
   display: inline-block;
   margin-left: 5px;
-  font-size: 16px;
+  font-size: 1rem;
   vertical-align: middle;
 }
 
 tr > td:first-child {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding-left: 50px;
+  padding-left: 3.125rem;
 }
 
 tr > td:last-child {
@@ -243,7 +244,7 @@ tr > td:last-child {
 tr > th:first-child {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding-left: 50px;
+  padding-left: 3.125rem;
 }
 
 tr > th:last-child {
@@ -377,8 +378,8 @@ tr > th:last-child {
 .card .text-area {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  padding: 24px;
+  gap: 1rem;
+  padding: 1.5rem;
   color: #fbfbf4;
 }
 
@@ -478,7 +479,7 @@ tr > th:last-child {
 
 .footer-social {
   display: flex;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .footer-social .icon {
@@ -565,9 +566,10 @@ tr > th:last-child {
 }
 
 .icon-cta .container {
-  max-width: 1200px;
+  max-width: 700px;
+  width: 100%;
   display: flex;
-  padding: 45px 270px;
+  padding: 4% 3%;
   justify-content: space-between;
   margin: auto;
 }
@@ -595,21 +597,21 @@ tr > th:last-child {
 }
 
 .icon1 {
-  width: 70px;
+  width: 4.375rem;
 }
 
 .icon2 {
-  width: 52px;
+  width: 3.25rem;
 }
 
 .icon3 {
-  width: 38px;
+  width: 2.375rem;
 }
 
 .hours-home {
   display: flex;
   width: 100%;
-  height: 65px;
+  height: 4.06rem;
   background-color: #f2edd0;
   justify-content: center;
   align-items: center;
@@ -645,26 +647,10 @@ tr > th:last-child {
   max-width: 1440px;
 }
 
-.cardimg1 {
-  width: 450px;
-  height: 300px;
-  object-position: -5px -51px;
-}
-.cardimg2 {
-  width: 485px;
-  height: 324px;
-  object-position: -22px -59px;
-}
-.cardimg3 {
-  width: 649px;
-  height: 433px;
-  object-position: -19px -203px;
-}
-
 .aboutcapys {
   display: flex;
   width: 100%;
-  padding: 70px;
+  padding: 4.375rem 5%;
   background-color: #e0f2a0;
   justify-content: center;
 }
@@ -673,7 +659,6 @@ tr > th:last-child {
   width: 100%;
   max-width: 1300px;
   padding: 35px 0px;
-  gap: 10px;
   background-image: url("../assets/capycrew.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -686,7 +671,7 @@ tr > th:last-child {
   width: 55%;
   max-width: 700px;
   border-radius: 80px 20px 80px 20px;
-  padding: 55px;
+  padding: 3.44rem 4%;
   gap: 24px;
   background-color: #fbfbf4;
 }
@@ -694,15 +679,7 @@ tr > th:last-child {
 .textandbutton .textarea {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-}
-
-.textarea h2 {
-  line-height: 60px;
-}
-
-.textarea p {
-  line-height: 26px;
+  gap: 1.5rem;
 }
 
 /* PLAN YOUR VISIT */
@@ -714,12 +691,14 @@ tr > th:last-child {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  gap: 2%;
 }
 
 .hours-card1 {
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 48%;
   max-width: 480px;
   height: auto;
   border-radius: 20px 20px 20px 70px;
@@ -730,6 +709,7 @@ tr > th:last-child {
   display: flex;
   flex-direction: column;
   flex: 1;
+  width: 48%;
   max-width: 480px;
   height: auto;
   border-radius: 20px 70px 20px 20px;
@@ -738,7 +718,7 @@ tr > th:last-child {
 
 .date-range {
   width: 100%;
-  padding: 30px 50px;
+  padding: 1.875rem 3.125rem;
   background-color: #8c6b4f;
   color: #fbfbf4;
 }
@@ -748,7 +728,7 @@ tr > th:last-child {
   flex-direction: column;
   flex: 1;
   gap: 30px;
-  padding: 35px 50px 50px 50px;
+  padding: 2.18rem 3.125rem 3.125rem 3.125rem;
   background-color: #f2edd0;
   font-size: 1.3rem;
   line-height: 1.8;
@@ -794,11 +774,21 @@ tr > th:last-child {
 }
 
 .dir-map {
-  width: 580px;
+  width: 100%;
+  max-width: 580px;
   height: 327px;
   border: 1px solid #265269;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.dir-map img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 580px;
+  height: auto;
 }
 
 .dir-scroll {
@@ -809,7 +799,7 @@ tr > th:last-child {
   max-width: 580px;
   background-color: #f2edd0;
   border-radius: 20px;
-  padding: 40px;
+  padding: 2.5rem 5%;
   gap: 10px;
   overflow-y: scroll;
   cursor: ns-resize;
@@ -829,22 +819,22 @@ tr > th:last-child {
 
 .storyimg1 {
   float: right;
-  width: 480px;
+  width: 48%;
   max-width: 480px;
-  height: 358px;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
-  margin: 0px 40px 20px 40px;
+  margin: 0 0 1.25rem 2.5rem;
 }
 
 .storyimg2 {
   float: left;
-  width: 480px;
+  width: 48%;
   max-width: 480px;
-  height: 358px;
+  height: auto;
   border-radius: 20px;
   overflow: hidden;
-  margin: 0px 40px 20px 0px;
+  margin: 0 2.5rem 1.25rem 0;
 }
 
 .styled-hr-story {
@@ -935,7 +925,7 @@ tr > th:last-child {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  max-width: 1125px;
+  max-width: 1075px;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -956,8 +946,8 @@ tr > th:last-child {
 .lightbox-image img {
   border-radius: 50%;
   overflow: hidden;
-  width: 330px;
-  height: 330px;
+  width: 300px;
+  height: 300px;
 }
 
 .styled-hr-lightbox {
@@ -1101,7 +1091,6 @@ img.hover-shadow {
   width: 100%;
   max-width: 1300px;
   padding: 35px 0px;
-  gap: 10px;
   background-image: url("../assets/meetbg.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -1115,8 +1104,8 @@ img.hover-shadow {
   width: 55%;
   max-width: 700px;
   border-radius: 80px 20px 80px 20px;
-  padding: 55px;
-  gap: 24px;
+  padding: 3.44rem 4%;
+  gap: 1.5rem;
   background-color: #fbfbf4;
 }
 
@@ -1398,24 +1387,19 @@ label {
 
 /*RESPONSIVE STYLES */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1024px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 3.8rem;
     line-height: 1.1;
   }
 
   h2 {
-    font-size: 2.3rem;
-    line-height: 1.2;
-  }
-
-  h3 {
-    font-size: 1.7rem;
+    font-size: 2.8rem;
     line-height: 1.2;
   }
 
   .overlay-text {
-    font-size: 2.9rem;
+    font-size: 4.4rem;
     line-height: 1.1;
   }
 
@@ -1436,19 +1420,24 @@ label {
   }
 }
 
-@media screen and (min-width: 641px) and (max-width: 1024px) {
+@media screen and (max-width: 640px) {
   h1 {
-    font-size: 3.8rem;
+    font-size: 2.6rem;
     line-height: 1.1;
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.3rem;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.7rem;
     line-height: 1.2;
   }
 
   .overlay-text {
-    font-size: 4.4rem;
+    font-size: 2.9rem;
     line-height: 1.1;
   }
 
