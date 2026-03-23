@@ -105,6 +105,7 @@ h4 {
   align-items: center;
   gap: 1.56rem;
   padding: 2.81rem 0.5rem 1.88rem 0.5rem;
+  text-align: center;
 }
 
 .introtext {
@@ -409,12 +410,16 @@ tr > th:last-child {
   align-items: center;
   width: 100%;
   max-width: 1440px;
-  padding: 0px;
+  padding: 0rem 0.5rem;
 }
 
 .logo {
   border: 0px;
   max-width: 338px;
+}
+
+.mobilemenu {
+  display: none;
 }
 
 .menu-links {
@@ -1502,6 +1507,92 @@ label {
   .footer-logo {
     width: 250px;
   }
+
+  /* Dropdown menu */
+
+  nav .menu-links {
+    display: none;
+  }
+
+  nav .mobilemenu {
+    display: flex;
+    justify-content: end;
+    padding-right: 25px;
+  }
+
+  .dropdown-menu {
+    position: fixed;
+    top: 125px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #fbfbf4;
+    padding: 40px 20px;
+    list-style: none;
+    margin: 0;
+    z-index: 2000;
+    transform: translatex(-150%);
+    transition: transform 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .mobilemenu input {
+    display: none;
+  }
+
+  .mobilemenu label {
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1rem;
+    z-index: 2010;
+    color: #c74a3a;
+  }
+
+  /* Show menu when checkbox is checked */
+  .mobilemenu input:checked ~ .dropdown-menu {
+    transform: translatex(0);
+  }
+
+  .dropdown-menu .menuitem {
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu menuitem:hover {
+    background: #f5f5f5;
+  }
+
+  .menuitem a {
+    text-decoration: none;
+    color: #265269;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 1.2;
+  }
+
+  .menuitem a.active {
+    color: #8c6b4f;
+    border-bottom: 1px solid #8c6b4f;
+  }
+
+  .menuitem button {
+    margin: 10px;
+  }
+
+  .logo {
+    width: 290px;
+  }
+  /* End nvigation */
 }
 
 @media screen and (max-width: 768px) {
