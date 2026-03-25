@@ -671,21 +671,49 @@ tr > th:last-child {
   width: 100%;
   max-width: 1300px;
   padding: 35px 0px;
-  background-image: url("../assets/capycrew.png");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: right top;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+}
+
+.aboutcapys .imgarea {
+  flex: 0 0 55%;
+  position: relative;
+  height: 485px;
+  min-height: 485px;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.imgarea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
+}
+
+.aboutcapys .respvis {
+  display: none;
+}
+
+.aboutcapys .widevis {
+  display: block;
 }
 
 .aboutcapys .textandbutton {
   display: flex;
   flex-direction: column;
-  width: 55%;
-  max-width: 700px;
+  flex: 0 1 55%;
+  position: relative;
   border-radius: 80px 20px 80px 20px;
   padding: 3.44rem 4%;
   gap: 24px;
   background-color: #fbfbf4;
+  z-index: 5;
+  margin-right: -5%;
 }
 
 .textandbutton .textarea {
@@ -1097,7 +1125,7 @@ img.hover-shadow {
 .meetinperson {
   display: flex;
   width: 100%;
-  padding: 70px;
+  padding: 4.375rem 5%;
   justify-content: center;
 }
 
@@ -1105,22 +1133,41 @@ img.hover-shadow {
   width: 100%;
   max-width: 1300px;
   padding: 35px 0px;
-  background-image: url("../assets/meetbg.png");
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: left top;
+  position: relative;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+}
+
+.meetinperson .imgarea {
+  flex: 0 0 55%;
+  position: relative;
+  height: 485px;
+  min-height: 485px;
+  z-index: 1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.meetinperson .imgarea img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left center;
+  display: block;
 }
 
 .meetinperson .textandbutton {
   display: flex;
   flex-direction: column;
-  justify-self: right;
-  width: 55%;
-  max-width: 700px;
+  flex: 0 0 55%;
+  position: relative;
   border-radius: 80px 20px 80px 20px;
   padding: 3.44rem 4%;
   gap: 1.5rem;
   background-color: #fbfbf4;
+  z-index: 5;
+  margin-left: -5%;
 }
 
 /* FAQ */
@@ -1607,6 +1654,53 @@ label {
 
   .form-content {
     padding: 55px 5%;
+  }
+
+  .dir-container {
+    flex-direction: column;
+  }
+
+  .aboutcapys .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .imgarea {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .aboutcapys .imgarea {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .aboutcapys .respvis {
+    display: block;
+  }
+
+  .aboutcapys .widevis {
+    display: none;
+  }
+
+  .aboutcapys .textandbutton {
+    border-radius: 0 0 20px 20px;
+    margin-right: 0px;
+    flex: 0 1 auto;
+  }
+
+  .meetinperson .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .meetinperson .imgarea {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .meetinperson .textandbutton {
+    flex: 0 1 auto;
+    border-radius: 0 0 20px 20px;
+    margin-left: 0px;
   }
 }
 
