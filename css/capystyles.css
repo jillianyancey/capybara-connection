@@ -1140,7 +1140,7 @@ img.hover-shadow {
 }
 
 .meetinperson .imgarea {
-  flex: 0 0 55%;
+  flex: 0 0 53%;
   position: relative;
   height: 485px;
   min-height: 485px;
@@ -1160,14 +1160,14 @@ img.hover-shadow {
 .meetinperson .textandbutton {
   display: flex;
   flex-direction: column;
-  flex: 0 0 55%;
+  flex: 0 0 53%;
   position: relative;
   border-radius: 80px 20px 80px 20px;
   padding: 3.44rem 4%;
   gap: 1.5rem;
   background-color: #fbfbf4;
   z-index: 5;
-  margin-left: -5%;
+  margin-left: -6%;
 }
 
 /* FAQ */
