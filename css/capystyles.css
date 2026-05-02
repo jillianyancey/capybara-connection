@@ -176,14 +176,18 @@ h4 {
   background-color: #265269;
 }
 
+.blue-txt {
+  color: #265269;
+}
+
 .wide1125 {
   max-width: 1125px;
 }
 
 .table-header {
   font-family: "Bonnie", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 700;
+  font-size: 1.313rem;
+  font-weight: 600;
   line-height: 1.1;
   letter-spacing: 7%;
 }
@@ -200,8 +204,6 @@ h4 {
 th,
 td {
   padding: 1.5rem 3.125rem 1.5rem 0rem;
-  color: #fbfbf4;
-  background-color: #265269;
   border-top: 5px solid #e0f2a0;
   border-bottom: 5px solid #e0f2a0;
   border-right: none;
@@ -212,11 +214,14 @@ td {
 td {
   background-color: #fbfbf4;
   color: #2b2b2b;
+  vertical-align: top;
 }
 
 th {
   cursor: pointer;
   white-space: nowrap;
+  background-color: #265269;
+  color: #fbfbf4;
 }
 
 th .arrow {
@@ -254,7 +259,7 @@ tr > th:last-child {
 
 .styled-hr {
   border: none;
-  height: 1px;
+  height: 0.5px;
   background-color: #fbfbf4;
   width: 100%;
   max-width: 1200px;
@@ -459,7 +464,7 @@ tr > th:last-child {
   width: 100%;
   max-width: 1440px;
   min-height: 250px;
-  padding: 35px 0px;
+  padding: 30px 0px;
   align-items: center;
   justify-content: space-between;
 }
@@ -476,9 +481,9 @@ tr > th:last-child {
   display: flex;
   gap: 35px;
   font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
   line-height: 1.1;
   color: #fbfbf4;
   text-align: center;
@@ -490,7 +495,7 @@ tr > th:last-child {
 }
 
 .footer-logo {
-  width: 275px;
+  width: 260px;
 }
 
 .footer-social {
@@ -502,11 +507,11 @@ tr > th:last-child {
   width: 2.2rem;
   height: 2.2rem;
   background-color: #fbfbf4;
-  color: #c74a3a;
+  color: #265269;
   align-content: center;
   text-align: center;
   border-radius: 5px;
-  border-color: #c74a3a;
+  border-color: #265269;
   border: 1px;
   border-style: solid;
 }
@@ -524,7 +529,7 @@ tr > th:last-child {
   font-weight: 400;
   font-style: normal;
   font-size: 0.9rem;
-  line-height: 1.4;
+  line-height: 1.6;
   color: #fbfbf4;
 }
 
@@ -609,7 +614,6 @@ tr > th:last-child {
 .aboutcapys .container {
   width: 100%;
   max-width: 1300px;
-  padding: 35px 0px;
   position: relative;
   overflow: visible;
   display: flex;
@@ -728,7 +732,7 @@ tr > th:last-child {
 
 .table-container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -739,30 +743,23 @@ tr > th:last-child {
 }
 
 .table-button {
-  min-width: 180px;
+  min-width: 160px;
   background-color: #fbfbf4;
-}
-
-.directions {
-  width: 100%;
-  max-width: 1300px;
-  margin: 0 auto;
 }
 
 .dir-container {
   display: flex;
   justify-content: center;
   width: 100%;
-  background-color: #8c6b4f;
-  border-radius: 20px;
-  padding: 50px;
-  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 55px;
 }
 
 .dir-map {
   width: 100%;
   max-width: 580px;
-  height: 327px;
+  height: 387px;
   border: 1px solid #265269;
   border-radius: 20px;
   overflow: hidden;
@@ -781,14 +778,15 @@ tr > th:last-child {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 327px;
   max-width: 580px;
-  background-color: #f2edd0;
-  border-radius: 20px;
-  padding: 2.5rem 5%;
+  gap: 20px;
+}
+
+.dir-scroll-sub {
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  overflow-y: scroll;
-  cursor: ns-resize;
+  width: 100%;
 }
 
 .dir-scroll h3 {
@@ -1070,7 +1068,6 @@ img.hover-shadow {
 .meetinperson .container {
   width: 100%;
   max-width: 1300px;
-  padding: 35px 0px;
   position: relative;
   overflow: visible;
   display: flex;
@@ -1184,8 +1181,8 @@ img.hover-shadow {
   display: flex;
   flex-direction: column;
   justify-self: right;
-  max-width: 750px;
-  width: 58%;
+  max-width: 720px;
+  width: 50%;
   border-radius: 65px 15px 65px 15px;
   padding: 55px;
   gap: 24px;
@@ -1194,13 +1191,18 @@ img.hover-shadow {
 .form-content .textarea {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 22px;
+  font-family: "Bonnie", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #265269;
 }
 
 .form-row {
   display: flex;
   gap: 32px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -1225,6 +1227,7 @@ textarea {
 
 label {
   font-weight: 600;
+  color: #265269;
 }
 
 /* FACTS */
@@ -1423,6 +1426,10 @@ label {
   .links a.active {
     color: #8c6b4f;
     border-bottom: 1px solid #8c6b4f;
+  }
+
+  .form-content {
+    width: 60%;
   }
 
   /*Responsive Carousel*/
