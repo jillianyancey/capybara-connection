@@ -559,6 +559,20 @@ tr > th:last-child {
   overflow: hidden;
 }
 
+.hero-vid::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.35) 0%,
+    rgba(0, 0, 0, 0.08) 65%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
 .hero-vid video {
   height: 100%;
   width: 100%;
@@ -576,7 +590,7 @@ tr > th:last-child {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -51%);
-  z-index: 1;
+  z-index: 2;
   width: 100%;
   padding: 0 1rem;
   max-width: 850px;
