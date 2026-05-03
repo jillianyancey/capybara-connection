@@ -1449,6 +1449,10 @@ label {
     width: 60%;
   }
 
+  .imgarea img {
+    object-position: center;
+  }
+
   /*Responsive Carousel*/
 
   .carousel {
@@ -1520,7 +1524,6 @@ label {
     content: attr(cell-label);
     position: absolute;
     left: 15px;
-    top: 10px;
     font-family: "Lato", sans-serif;
     font-weight: 400;
     color: #265269;
@@ -1705,7 +1708,10 @@ label {
   }
 
   .aboutcapys .imgarea {
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 15px 0 0;
+    height: 350px;
+    max-height: 350px;
+    min-height: 350px;
   }
 
   .aboutcapys .respvis {
@@ -1717,7 +1723,7 @@ label {
   }
 
   .aboutcapys .textandbutton {
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 40px 15px;
     margin-right: 0px;
     flex: 0 1 auto;
   }
@@ -1728,12 +1734,15 @@ label {
   }
 
   .meetinperson .imgarea {
-    border-radius: 20px 20px 0 0;
+    border-radius: 40px 15px 0 0;
+    height: 350px;
+    max-height: 350px;
+    min-height: 350px;
   }
 
   .meetinperson .textandbutton {
     flex: 0 1 auto;
-    border-radius: 0 0 20px 20px;
+    border-radius: 0 0 40px 15px;
     margin-left: 0px;
   }
 }
