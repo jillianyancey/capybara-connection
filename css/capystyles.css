@@ -1348,12 +1348,13 @@ label {
 .fact-text img {
   width: 1.4rem;
   height: auto;
+  margin-top: 4px;
 }
 
 .fact-item {
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: 15px;
+  align-items: flex-start;
 }
 
 @keyframes slideInLeft {
@@ -1479,8 +1480,8 @@ label {
     position: static;
     width: 100%;
     margin-top: 0.5rem;
-    padding: 1rem;
-    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
   }
 
   .dots {
