@@ -1663,7 +1663,7 @@ label {
   /*lightbox close button*/
   .modal .close {
     position: fixed;
-    top: 95px;
+    top: 130px;
     right: 20px;
     z-index: 9999;
   }
